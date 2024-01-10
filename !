@@ -1,0 +1,42 @@
+'''#31
+n = int(input("Enter number: "))
+m = int(input("Enter number: "))
+k = 0
+
+for i in range(2,(n+m)//2+1):
+
+    if n%i==0 and m%i==0:
+        k = i   
+print(k)
+
+#32
+n = int(input("Enter number: "))
+m = int(input("Enter number: "))
+k = 0
+while True:
+    k += 1
+    if k%n==0 and k%m==0:
+        print(k)
+        break
+
+#33
+n = int(input())
+m = int(input())
+z = int(input())
+k = z+n+m
+if z==n or z==m or m==n:
+    k = 0
+print(k)
+'''
+n = int(input())
+m = int(input())
+k=0
+z = [15,16,17,18,19,20]
+for i in z:
+    k = n+m
+    if k == i:
+        k = 20
+        break
+    else:
+        k=n+m
+print(k)

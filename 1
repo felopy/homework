@@ -1,0 +1,96 @@
+'''#1 print( "Twinkle, twinkle, little star,\n How I wonder what you are! Up above the world\n\t so high, Like a diamond in the sky.\n\t Twinkle, twinkle, little star, How I wonder what you are")
+#2
+import sys
+print(sys.version_info)
+#3
+import datetime
+now = datetime.datetime.now()
+print(now.strftime("%Y-%m-%d %H:%M:%S"))
+#4
+r = 0.5
+p = 3.14
+s = r*r*p
+print(s)
+#5
+name = input("Enter name: ")
+surname = input("Enter surname: ")
+mword = ""
+msentence = ""
+for i in range(len(name)-1,-1,-1):
+    mword += name[i]
+for i in range(len(surname)-1,-1,-1):
+    msentence += surname[i]
+print(mword,msentence)
+#6
+digit = input("Enter number: ")
+list = digit.split()
+tuple = tuple(list)
+print(list,tuple)
+#7
+word = input("Enter word: ")
+mword = ""
+for i in  range(len(word)):
+    if word[i] == ".":
+        mword += word[i+1:]
+print(mword)
+
+# Prompt the user to input a filename and store it in the 'filename' variable
+filename = input("Input the Filename: ")
+
+# Split the 'filename' string into a list using the period (.) as a separator and store it in the 'f_extns' variable
+f_extns = filename.split(".")
+
+# Print the extension of the file, which is the last element in the 'f_extns' list
+print("The extension of the file is : " + repr(f_extns[-1]))
+
+#8
+mlsssssst = ['red','green','wite','black']
+print(mlist[0],mlist[-1])
+
+#9
+number = input("Enter number: ")
+mword = ""
+for i in number:
+    if i == ",":
+        i = "/"
+    mword += i
+print(mword)
+xam_st_date = (11, 12, 2014)
+
+# Print the exam start date using string formatting
+# The '%i' placeholders are filled with the values from the 'exam_st_date' tuple
+print("The examination will start from : %i / %i / %i" % exam_st_date)
+
+#10
+n = input("Enter number: ")
+print(int(n) + int(str(n+n)) +int(str(n+n+n)))
+# Prompt the user to input an integer and store it in the variable 'a'
+a = int(input("Input an integer: "))
+
+# Create new integers 'n1', 'n2', and 'n3' by concatenating 'a' with itself one, two, and three times, respectively
+n1 = int("%s" % a)          # Convert 'a' to an integer
+n2 = int("%s%s" % (a, a))   # Concatenate 'a' with itself and convert to an integer
+n3 = int("%s%s%s" % (a, a, a))  # Concatenate 'a' with itself twice and convert to an integer
+
+# Calculate the sum of 'n1', 'n2', and 'n3' and print the result
+print(n1 + n2 + n3)
+
+#11
+print(abs.__doc__)
+
+import calendar
+y = input()
+m = input()
+print(month(y,m)
+
+#21        
+num = int(input("Enetr digit: "))
+if num%2==0 or num%3==0 or num%5==0:
+    if num!=2 and num!=3 and num!=5:
+        print("is a couple",num)
+    else:
+        print("is a odd",num)
+else:
+    print("is a odd",num)
+'''
+

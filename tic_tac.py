@@ -2,7 +2,7 @@
 
 ml = [["_","_","_"],["_","_","_"],["_","_","_"]]
 #Print board
-def print_board():
+def print_board(): #function to print the whiteboard
     for i in range(3):
         print(" ".join(ml[i]) + "\n")
 
@@ -22,7 +22,6 @@ def check():
 
 #The logic of the game
 def logic_game():
-    count = 0
     while True:
         variant = input("Enter X or O: ")
         try:

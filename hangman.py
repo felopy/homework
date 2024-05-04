@@ -34,7 +34,7 @@ hangman = [
 |
 |
 |
-|
+|-
 |
 --------
 """,
@@ -106,7 +106,7 @@ hangman = [
 |   |
 |   |
 |  |
-|  |
+|  |+
 |
 --------
 """,
@@ -155,7 +155,7 @@ def logic_game(list_board):
                 word_re += word[i]
             else:
                 word_re += len_word[i]
-        len_word = word_re
+        len_word= word_re
         print(len_word)
         if guess.lower() not in word.lower():
             wrong_answer -= 1
